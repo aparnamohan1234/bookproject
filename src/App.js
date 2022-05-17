@@ -5,6 +5,7 @@ import  'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Addbook from './Component/Addbook';
 import Searchbook from './Component/Searchbook';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Viewbook from './Component/Viewbook';
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Addbook/>}/>
         <Route path="/search" exact element={<Searchbook/>}/>
+        <Route path="/view" exact element={<Viewbook/>}/>
       </Routes>
       </BrowserRouter>
     </div>
